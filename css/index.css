@@ -1,0 +1,65 @@
+#landing-div {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden
+}
+#landing-video {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  z-index: -10;
+}
+#landing-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  min-width: 200px;
+  max-height: 80vh;
+}
+#landing-logo-name {
+  position: absolute;
+  margin: 0;
+  font-family: "Copperplate", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+#main-div {
+  margin: auto;
+  width: 80%;
+}
+/*
+#main-div h2 {
+  width: 50%;
+  text-align: left;
+  border-bottom: solid 2px cyan;
+}
+*/
+#insights {
+
+}
+
+input[type="radio"] {
+  display: none;
+}
+.toggle-label:hover {
+  cursor: pointer;
+  color: #008888;
+}
+.toggle:checked + .toggle-label {
+  font-size: 24px;
+}
+#usecases-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+#usecases-list > div {
+  flex-basis: 0px;
+  flex-grow: 1;
+}

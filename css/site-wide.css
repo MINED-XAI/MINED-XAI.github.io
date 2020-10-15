@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Copperplate";
+  src: url("/fonts/Copperplate.otf") format("opentype");
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f4ff;
+  color: black;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.7em;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: "Copperplate", sans-serif;
+}
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  color: #00dddd;
+}
+iframe {
+  border: none;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content-div {
+  background-color: inherit;
+}
+
+#nav-bar-div {
+  position: -webkit-sticky;
+  position: sticky;
+  margin: auto;
+  padding: 0;
+  top: -1px;
+  width: 100%;
+  z-index: 10;
+  background-color: inherit;
+}
+#nav-bar {
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #00dddd;
+  font-size: 20px;
+  text-align: center;
+}
+#nav-bar > li {
+  padding: 0.5em 0px;
+  flex-basis: 0px; /* Makes elements equal size */
+  flex-grow: 1;
+  text-align: center;
+  color: #003333;
+  text-align: center;
+  /* font-weight: normal; */
+  border-bottom: solid 2px;
+  border-color: #88880000;
+  transition: all 0.3s ease;
+}
+#nav-bar li:hover {
+  cursor: pointer;
+  flex-grow: 1.2;
+  font-weight: bold;
+  border-color: #888800ff;
+  color: #888800;
+}
+#nav-bar a {
+  color: inherit;
+}
