@@ -42,24 +42,57 @@
 
 }
 
-input[type="radio"] {
-  display: none;
-}
-.toggle-label:hover {
-  cursor: pointer;
-  color: #008888;
-}
-.toggle:checked + .toggle-label {
-  font-size: 24px;
-}
 #usecases-list {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
 #usecases-list > div {
   flex-basis: 0px;
   flex-grow: 1;
+}
+input[type="radio"] {
+  display: none;
+}
+#toggle-labels {
+  display: flex;
+}
+.toggle-label {
+  flex-basis: 0px;
+  flex-grow: 1;
+}
+.toggle-label:hover {
+  cursor: pointer;
+  color: #008888;
+}
+#toggle-covid:checked ~ #toggle-labels > .covid,
+#toggle-xview:checked ~ #toggle-labels > .xview,
+#toggle-diabetes:checked ~ #toggle-labels > .diabetes,
+#toggle-stockmarket:checked ~ #toggle-labels > .stockmarket {
+  background-color: #aaaaaa;
+  font-weight: 700;
+}
+#toggle-contents {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 800px;
+}
+.toggle-content {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  background-color: #aaaaaa;
+  transition: width 0.3s ease;
+}
+#toggle-covid:checked ~ #toggle-contents > .covid,
+#toggle-xview:checked ~ #toggle-contents > .xview,
+#toggle-diabetes:checked ~ #toggle-contents > .diabetes,
+#toggle-stockmarket:checked ~ #toggle-contents > .stockmarket {
+  width: 100%;
+  height: auto;
 }
