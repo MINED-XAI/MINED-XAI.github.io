@@ -1,17 +1,24 @@
-#landing-div {
+section {
+  margin: auto;
+  padding-top: 48px;
+  width: 80%;
+}
+
+#splash-div {
   margin: 0;
   padding: 0;
+  height: 100vh;
   overflow-x: hidden
 }
-#landing-video {
+#splash-video {
+  position: fixed;
   margin: 0;
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
-  max-height: 100vh;
   z-index: -10;
 }
-#landing-logo {
+#splash-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -19,7 +26,43 @@
   min-width: 200px;
   max-height: 80vh;
 }
-#landing-logo-name {
+#splash-logo-inline {
+  width: 1200px;
+  height: 1000px;
+}
+@keyframes fadein-downward {
+  0% { opacity: 0; transform: translateY(-200px); }
+  30% { opacity: 0; transform: translateY(-200px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes fadein-upward {
+  0% { opacity: 0; transform: translateY(200px); }
+  30% { opacity: 0; transform: translateY(200px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes fadein-rightward {
+  0% { opacity: 0; transform: translateX(-200px); }
+  30% { opacity: 0; transform: translateX(-200px); }
+  100% { opacity: 1; transform: translateX(0px); }
+}
+@keyframes fadein-leftward {
+  0% { opacity: 0; transform: translateX(200px); }
+  30% { opacity: 0; transform: translateX(200px); }
+  100% { opacity: 1; transform: translateX(0px); }
+}
+#splash-logo-inline .top-circle {
+  animation: fadein-downward 1s ease-out 0s;
+}
+#splash-logo-inline .bottom-circle {
+  animation: fadein-upward 1s ease-out 0s;
+}
+#splash-logo-inline .left-circle {
+  animation: fadein-rightward 1s ease-out 0s;
+}
+#splash-logo-inline .right-circle {
+  animation: fadein-leftward 1s ease-out 0s;
+}
+#splash-logo-name {
   position: absolute;
   margin: 0;
   font-family: "Copperplate", sans-serif;
@@ -29,7 +72,7 @@
 
 #main-div {
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 /*
 #main-div h2 {
@@ -66,13 +109,15 @@ input[type="radio"] {
 }
 .toggle-label:hover {
   cursor: pointer;
-  color: #008888;
+  background-color: var(--med-blue);
+  color: var(--white);
 }
 #toggle-covid:checked ~ #toggle-labels > .covid,
 #toggle-xview:checked ~ #toggle-labels > .xview,
 #toggle-diabetes:checked ~ #toggle-labels > .diabetes,
 #toggle-stockmarket:checked ~ #toggle-labels > .stockmarket {
-  background-color: #aaaaaa;
+  background-color: var(--dark-blue);
+  color: var(--white);
   font-weight: 700;
 }
 #toggle-contents {
@@ -86,7 +131,8 @@ input[type="radio"] {
   width: 0px;
   height: 0px;
   overflow: hidden;
-  background-color: #aaaaaa;
+  background-color: var(--dark-blue);
+  color: var(--white);
   transition: width 0.3s ease;
 }
 #toggle-covid:checked ~ #toggle-contents > .covid,

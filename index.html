@@ -7,20 +7,32 @@
   <title>Mined-XAI</title>
 </head>
 <body>
-  <div id="content-div">
-    <div id="landing-div">
-      <img src="/images/landing-image.jpg" id="landing-video" alt="Landing page video">
-      <img src="/images/logo.svg" id="landing-logo" class="centered">
-      <h1 id="landing-logo-name" class="centered"><span style="color:#00dddd">MINED</span><span style="color:#dddd00">XAI</span></h1>
+  <div id="content-div" class="black-text">
+    <div id="splash-div">
+      <img src="/images/landing-image.jpg" id="splash-video" alt="Landing page video">
+      <!-- <img src="/images/logo.svg" id="splash-logo" class="centered"> -->
+      <svg id="splash-logo-inline" class="centered" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="logo-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+            <stop offset="100%" style="stop-color:rgb(0,255,255);stop-opacity:0.1" />
+          </radialGradient>
+        </defs>
+        <circle class="top-circle" cx="600" cy="400" r="200" fill="url(#logo-gradient)" stroke="rgba(0,255,255,0.75)" />
+        <circle class="bottom-circle" cx="600" cy="600" r="200" fill="url(#logo-gradient)" stroke="rgba(0,255,255,0.75)" />
+        <circle class="left-circle" cx="427" cy="500" r="200" fill="url(#logo-gradient)" stroke="rgba(0,255,255,0.75)" />
+        <circle class="right-circle" cx="773" cy="500" r="200" fill="url(#logo-gradient)" stroke="rgba(0,255,255,0.75)" />
+      </svg>
+      <h1 id="splash-logo-name" class="centered"><span class="lite-blue-text">MINED</span><span class="white-text">XAI</span></h1>
     </div>
-    <div id="nav-bar-div">
+    <div id="nav-bar-div" class="white-bg">
       <ul id="nav-bar">
         <li><a href="#insights">Insights</a></li>
         <li><a href="#usecases">Use Cases</a></li>
         <li><a href="#contactus">Contact Us</a></li>
       </ul>
     </div>
-    <div id="main-div">
+    <div id="main-div" class="white-bg">
       <section id="insights">
         <h2>Insights</h2>
         <p>Eram possumus de quae aute non nescius ita laboris a de eu dolore esse fugiat in an export proident exercitation hic ipsum constias in mentitum ab incurreret eram sunt e nulla, summis commodo o possumus, proident dolor aute incididunt dolor. Occaecat minim excepteur iudicem, iudicem noster tamen iis quem ad ex magna probant nescius, expetendis fugiat consequat appellat ea quamquam voluptatibus ab ingeniis, an qui quis magna labore, vidisse sint iudicem, sunt probant excepteur. Deserunt velit id deserunt concursionibus ea iudicem illum an consequat familiaritatem et an constias de mandaremus ab nisi non iudicem qui expetendis illum magna ex quem, est quem illum amet offendit qui eu malis tamen magna possumus ab litteris cohaerescant eu proident.Admodum minim ut quibusdam adipisicing ex eiusmod noster esse laborum labore de do illum in elit eu dolor consequat est illum nulla, ubi quis deserunt si o noster singulis possumus eu velit vidisse de quorum nisi a fore appellat te enim fugiat. Sunt consequat ab consequat, ne aute ita summis, doctrina noster nisi non summis, consequat illum magna iudicem minim. Voluptate ex eiusmod, si o sunt nisi quid.</p>
