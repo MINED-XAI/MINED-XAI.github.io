@@ -79,6 +79,7 @@
 
 body {
   margin: 0;
+  width: 100%;
   font-family: "Work Sans", sans-serif;
   line-height: 1.7em;
 }
@@ -106,7 +107,7 @@ iframe {
 }
 
 #content-div {
-
+  width: 100%;
 }
 
 #nav-bar-div {
