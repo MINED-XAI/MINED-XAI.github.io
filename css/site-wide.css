@@ -80,6 +80,7 @@
 body {
   margin: 0;
   width: 100%;
+  background-color: var(--black);
   font-family: "Work Sans", sans-serif;
   line-height: 1.7em;
 }
