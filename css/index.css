@@ -1,6 +1,7 @@
 .pane {
-  margin: auto;
-  padding-top: 48px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -20,8 +21,6 @@
 }
 
 #splash {
-  margin: 0;
-  padding: 0;
   background-image: url("/images/landing-image.jpg");
   background-attachment: fixed;
 }
@@ -89,18 +88,16 @@
   font-size: 40px;
   text-align: center;
   letter-spacing: 0.1em;
-
 }
 
 #about {
   display: flex;
-  margin: 0;
-  padding: 0;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 #about > img {
-
+  padding: 2em 0px;
 }
 #about-text {
   box-sizing: border-box;
@@ -116,18 +113,11 @@
   font-weight: 400;
 }
 #services {
-  margin: 0;
-  padding: 0;
   background-image: url("/images/background1.jpg");
 }
 #experience {
-  margin: 0;
-  padding: 0;
-  background-image: url("/images/background3.jpg");
 }
 #contact {
-  margin: 0;
-  padding: 0;
   background-image: url("/images/background4.jpg");
 }
 
