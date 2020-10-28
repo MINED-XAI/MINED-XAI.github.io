@@ -1,23 +1,18 @@
 .pane {
-  display: flex;
   margin: auto;
   padding-top: 48px;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  justify-content: space-around;
-  align-items: center;
 
   background-attachment: local;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: var(--white);
 }
 .pane h2 {
+  box-sizing: border-box;
   margin: 0;
-  width: 30%;
-  padding: 5%;
   text-align: center;
   font-size: 48px;
   line-height: 1.3em;
@@ -90,18 +85,40 @@
 }
 
 #summary {
-  height: auto;
+  padding: 2em 0px;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
 }
 
 #about {
+  display: flex;
   margin: 0;
   padding: 0;
-  background-image: url("/images/background1.jpg");
+  align-items: center;
+  justify-content: space-evenly;
+}
+#about > img {
+
+}
+#about-text {
+  box-sizing: border-box;
+  max-width: 600px;
+  height: 100%;
+}
+#about-text h2 {
+  text-align: right;
+}
+#about-text p {
+  padding: 1em 0px;
+  text-align: right;
+  font-weight: 400;
 }
 #services {
   margin: 0;
   padding: 0;
-  background-image: url("/images/background2.jpg");
+  background-image: url("/images/background1.jpg");
 }
 #experience {
   margin: 0;
