@@ -97,7 +97,8 @@
   justify-content: space-evenly;
 }
 #about > img {
-  padding: 2em 0px;
+  padding: 0px;
+  box-shadow: 5px 5px 10px rgba(0,0,40,0.4);
 }
 #about-text {
   box-sizing: border-box;
