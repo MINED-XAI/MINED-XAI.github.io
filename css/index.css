@@ -88,10 +88,12 @@
   font-size: 40px;
   text-align: center;
   letter-spacing: 0.1em;
+  line-height: 1.7em;
 }
 
 #about {
   display: flex;
+  padding: 2em;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -143,6 +145,7 @@
   margin: 0px;
   padding: 0px;
 }
+/* Diagonal list layout
 #experience li:nth-child(1) { padding-left: 0.1em; }
 #experience li:nth-child(2) { padding-left: 0.8em }
 #experience li:nth-child(3) { padding-left: 1.5em; }
@@ -151,10 +154,12 @@
 #experience li:nth-child(6) { padding-left: 3.6em; }
 #experience li:nth-child(7) { padding-left: 4.3em; }
 #experience li:nth-child(8) { padding-left: 5.0em; }
+*/
 #experience a {
   padding: 1em 2em;
   font-size: 24px;
-  border: 2px solid var(--lite-blue);
+  color: var(--med-blue);
+  border: 2px solid var(--med-blue);
 }
 #contact {
   background-image: url("/images/background4.jpg");
