@@ -265,3 +265,14 @@
   margin: auto;
   width: 100%;
 }
+
+.unshown {
+  opacity: 0%;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.shown {
+  opacity: 100%;
+  transform: translateY(0px);
+  transition: 0.5s;
+}
