@@ -9,6 +9,9 @@
 <body>
   <div id="content-div" class="white-text">
     <section id="splash" class="pane">
+      <video src="/images/video.mov" id="splash-video" class="centered" autoplay loop poster="/images/landing-image.jpg">
+
+      </video>
       <!-- <img src="/images/logo.svg" id="splash-logo" class="centered"> -->
       <svg id="splash-logo-inline" class="centered" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -23,9 +26,7 @@
         <circle class="right-circle" cx="773" cy="500" r="200" fill="url(#logo-gradient)" stroke="rgba(0,255,255,0.75)" />
       </svg>
       <h1 id="splash-logo-name" class="centered"><span class="lite-blue-text">MINED</span><span class="white-text">XAI</span></h1>
-    </section>
-    <section id="summary" class="">
-      <p>Architect and Exploit your Data<br>
+      <p id="summary-text">Architect and Exploit your Data<br>
         <em>Autonomously</em></p>
     </section>
     <section id="about" class="pane white-bg dark-blue-text">
@@ -44,7 +45,7 @@
       <div id="experience-text">
         <ul>
           <li>Human Perfomance Assesment</li>
-          <li>Health Monitoring</li>
+          <li><span><span class="underlined">Health Monitoring</span></span></li>
           <li>Computer Vision</li>
           <li>Mission Critical Solutions</li>
           <li>Materials Optimizaiton</li>
