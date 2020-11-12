@@ -89,6 +89,7 @@
   text-align: center;
   letter-spacing: 0.1em;
   line-height: 1.7em;
+  background-image: linear-gradient(to bottom, #101010, #100f10, #110e0e, #110d0c, #100c08);
 }
 
 #about {
