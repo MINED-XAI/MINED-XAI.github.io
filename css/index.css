@@ -179,6 +179,7 @@
   margin: 0px;
   padding: 0px;
 }
+/*  /
 #experience li:hover {
   cursor: pointer;
 }
@@ -195,16 +196,7 @@
 #experience li:hover::after {
   width: 100%;
 }
-/* Diagonal list layout *
-#experience li:nth-child(1) { padding-left: 0.1em; }
-#experience li:nth-child(2) { padding-left: 0.8em }
-#experience li:nth-child(3) { padding-left: 1.5em; }
-#experience li:nth-child(4) { padding-left: 2.2em; }
-#experience li:nth-child(5) { padding-left: 2.9em; }
-#experience li:nth-child(6) { padding-left: 3.6em; }
-#experience li:nth-child(7) { padding-left: 4.3em; }
-#experience li:nth-child(8) { padding-left: 5.0em; }
-/* */
+/*  */
 #experience a {
   padding: 1em 2em;
   font-size: 24px;
