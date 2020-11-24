@@ -5,6 +5,10 @@
   src: url("/fonts/Copperplate.otf") format("opentype");
 }
 @font-face {
+  font-family: "Universal Serif";
+  src: url("/fonts/Universal Serif.ttf") format("truetype");
+}
+@font-face {
   font-family: "Work Sans";
   src: url("/fonts/WorkSans-Regular.woff") format("woff");
   font-weight: 400;
@@ -46,7 +50,7 @@
   --white: #fefefa;
   --dark-blue: #065a82;
   --med-blue: #1c7293;
-  --lite-blue: #64d9df;
+  --lite-blue: #34d9df;
 }
 .black-text {
   color: var(--black);

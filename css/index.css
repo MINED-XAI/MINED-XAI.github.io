@@ -5,6 +5,7 @@
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: auto;
 
   background-attachment: local;
   background-position: center;
@@ -84,8 +85,10 @@
 #splash-logo-name {
   position: absolute;
   margin: 0;
-  font-family: "Copperplate", serif;
+  font-family: "Universal Serif", serif;
   font-size: 188px;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
 }
 
 #summary {
@@ -123,11 +126,11 @@
   height: 100%;
 }
 #about-text h2 {
-  text-align: right;
+  text-align: center;
 }
 #about-text p {
   padding: 1em 0px;
-  text-align: right;
+  text-align: justify;
   font-weight: 400;
 }
 #services {
@@ -156,6 +159,7 @@
   margin: 0px;
   max-width: 900px;
   text-align: justify;
+  font-size: 20px;
 }
 #experience ul {
   margin: 0px;
@@ -238,7 +242,7 @@
   margin: 2em 0px;
   font-weight: 400;
 }
-#contact-text a {
+#contact-text > a {
   margin-top: 1em;
   padding: 1em 2em;
   align-self: flex-end;
