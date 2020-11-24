@@ -1,7 +1,7 @@
 .pane {
   box-sizing: border-box;
   margin: 0px;
-  padding: 2em;
+  padding: 3em;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -49,6 +49,8 @@
 #splash-logo-inline {
   width: 1200px;
   height: 1000px;
+  max-width: 100%;
+  max-height: 100%;
 }
 @keyframes fadein-downward {
   0% { opacity: 0; transform: translateY(-200px); }
@@ -84,29 +86,33 @@
 }
 #splash-logo-name {
   position: absolute;
+  width: 100%;
   margin: 0;
   font-family: "Universal Serif", serif;
-  font-size: 188px;
+  font-size: 12vw;
   letter-spacing: 0.2em;
-  white-space: nowrap;
+  line-height: 1em;
+  /* white-space: nowrap; */
 }
-
-#summary {
-  padding: 2em 0px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  line-height: 1.7em;
-  background: var(--black);
+@media (max-width: 1420px) {
+  #splash-logo-name {
+    font-size: 12vw;
+  }
 }
 #summary-text {
   position: relative;
   margin: auto;
-  top: 640px;
+  bottom: -60vh;
   font-size: 40px;
   text-align: center;
   letter-spacing: 0.1em;
   line-height: 1.7em;
   animation: fadein-upward 2.4s ease 0s;
+}
+@media (max-width: 900px) {
+  #summary-text {
+    font-size: 24px;
+  }
 }
 
 #about {
@@ -118,7 +124,7 @@
 #about > img {
   padding: 0px;
   box-shadow: 5px 5px 10px rgba(0,0,40,0.4);
-  max-width: 800px;
+  width: 800px;
 }
 #about-text {
   box-sizing: border-box;
@@ -133,8 +139,10 @@
   text-align: justify;
   font-weight: 400;
 }
-#services {
-  background-image: url("/images/background1.jpg");
+@media (max-width: 600px) {
+  #about-text p {
+    text-align: left;
+  }
 }
 #experience {
   display: flex;
@@ -148,31 +156,32 @@
 }
 #experience-text {
   display: flex;
-  padding: 3em 0px;
-  width: 80%;
-  flex-direction: row;
+  padding: 2em 0px;
+  width: 100%;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 #experience-text p {
-  margin: 0px;
-  max-width: 900px;
+  margin: 2em;
+  padding: 1em;
+  max-width: 600px;
   text-align: justify;
   font-size: 20px;
 }
 #experience ul {
-  margin: 0px;
-  padding: 0px 0.2em;
+  /* margin: 1em; */
+  padding: 0px 0.3em;
   overflow: hidden;
-  white-space: nowrap;
   list-style-type: none;
   font-size: 32px;
-  line-height: 1.7em;
+  line-height: 1.2em;
   text-align: right;
   border-right: solid 2px var(--lite-blue);
-  /* width: 0; */
-  /* transition: all 0.3s ease-out 0s; */
+}
+#experience ul li {
+  padding: 0.5em 0px;
 }
 #experience:hover ul {
   /* width: 30.6em; */
@@ -183,24 +192,6 @@
   margin: 0px;
   padding: 0px;
 }
-/*  /
-#experience li:hover {
-  cursor: pointer;
-}
-#experience li::after {
-  position: absolute;
-  content: '';
-  width: 0px;
-  height: 2px;
-  bottom: 0px;
-  right: 0px;
-  background-color: var(--white);
-  transition: 0.3s;
-}
-#experience li:hover::after {
-  width: 100%;
-}
-/*  */
 #experience a {
   padding: 1em 2em;
   font-size: 24px;
@@ -212,6 +203,20 @@
 #experience a:hover {
   color: var(--white);
   background-color: var(--lite-blue);
+}
+@media (max-width: 900px) {
+  #experience-text p {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+  }
+  #experience-text ul {
+    border-right: 0px;
+    border-left: solid 2px var(--lite-blue);
+    text-align: left;
+    font-size: 24px;
+    width: 90%;
+  }
 }
 
 #contact {
@@ -242,6 +247,12 @@
   margin: 2em 0px;
   font-weight: 400;
 }
+@media (max-width: 900px) {
+  #contact-text {
+    margin: 0px;
+    padding: 24px;
+  }
+}
 #contact-text > a {
   margin-top: 1em;
   padding: 1em 2em;
@@ -251,6 +262,7 @@
   border: 2px solid var(--med-blue);
   border-radius: 12px;
   transition: all 0.3s;
+  text-align: center;
 }
 #contact-text a:hover {
   color: var(--white);
