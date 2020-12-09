@@ -73,16 +73,21 @@
   100% { opacity: 1; transform: translateX(0px); }
 }
 #splash-logo-inline .top-circle {
-  animation: fadein-downward 1s ease-out 0s;
+  animation: fadein-downward 2s ease-out 0s;
 }
 #splash-logo-inline .bottom-circle {
-  animation: fadein-upward 1s ease-out 0s;
+  animation: fadein-upward 2s ease-out 0s;
 }
 #splash-logo-inline .left-circle {
-  animation: fadein-rightward 1s ease-out 0s;
+  animation: fadein-rightward 2s ease-out 0s;
 }
 #splash-logo-inline .right-circle {
-  animation: fadein-leftward 1s ease-out 0s;
+  animation: fadein-leftward 2s ease-out 0s;
+}
+@keyframes fadein {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 #splash-logo-name {
   position: absolute;
@@ -93,11 +98,17 @@
   letter-spacing: 0.2em;
   line-height: 1em;
   /* white-space: nowrap; */
+  animation: fadein 4s ease 0s;
 }
 @media (max-width: 1420px) {
   #splash-logo-name {
     font-size: 12vw;
   }
+}
+@keyframes summary-fadein-upward {
+  0% { opacity: 0; transform: translateY(200px); }
+  50% { opacity: 0; transform: translateY(200px); }
+  100% { opacity: 1; transform: translateY(0px); }
 }
 #summary-text {
   position: relative;
@@ -107,7 +118,7 @@
   text-align: center;
   letter-spacing: 0.1em;
   line-height: 1.7em;
-  animation: fadein-upward 2.4s ease 0s;
+  animation: summary-fadein-upward 5.5s ease 0s;
 }
 @media (max-width: 900px) {
   #summary-text {
